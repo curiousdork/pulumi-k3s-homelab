@@ -69,24 +69,6 @@ pulumi up
 pulumi destroy
 ```
 
-## Resources Managed
-
-| Resource | Type | Details |
-|----------|------|---------|
-| postgres | Deployment + Service | NodePort 30432, 10Gi PVC |
-| postgres-dev | Deployment + Service | NodePort 30433, 10Gi PVC |
-| valkey | Deployment + Service | NodePort 30379, 5Gi PVC |
-| valkey-dev | Deployment + Service | NodePort 30380, 5Gi PVC |
-| kubernetes-dashboard | Full deployment | Port 443 |
-
-## Accessing Services
-
-- **Postgres**: `192.168.68.74:30432`
-- **Postgres Dev**: `192.168.68.74:30433`
-- **Valkey**: `192.168.68.74:30379`
-- **Valkey Dev**: `192.168.68.74:30380`
-- **Kubernetes Dashboard**: `https://192.168.68.74`
-
 ## TypeScript Usage
 
 All modules export typed interfaces and functions:
