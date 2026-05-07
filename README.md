@@ -69,15 +69,6 @@ pulumi up
 pulumi destroy
 ```
 
-## TypeScript Usage
-
-All modules export typed interfaces and functions:
-
-```typescript
-import { createPostgres, type PostgresSpec } from "./postgres.js";
-import { createValkey, type ValkeySpec } from "./valkey.js";
-import { createPVC, type PVCSpec } from "./storage.js";
-```
 
 ## Commands
 
